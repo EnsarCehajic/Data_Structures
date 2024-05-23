@@ -28,12 +28,9 @@ private:
   size_t capacity_{0};
   size_t size_{0};
   T *arr_{nullptr};
-  // Index sa koje strane se dodaje
   size_t back_{0};
-  // Index sa koje strane se uklanja
   size_t front_{0};
 };
-// Vas kod ovdje
 
 template <typename T> Queue<T>::Queue() {
   capacity_ = 10;
