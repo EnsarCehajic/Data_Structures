@@ -28,7 +28,7 @@ To clone this repository to your local machine, follow these steps:
 3. Use the following command:
 
 ```bash
-git clone https://github.com/EnsarCehajic/Data_Structures.git
+git clone https://github.com/ensarcehajic/Data_Structures.git
 ```
 ## Contributing
 
