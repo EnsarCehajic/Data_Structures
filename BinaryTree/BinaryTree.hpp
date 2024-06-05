@@ -30,3 +30,29 @@ private:
   bool search(Node<T> *node, T value) const;
   void destroyTree(Node<T> *node);
 };
+
+
+template <typename T>
+BinaryTree<T>::~BinaryTree(){
+  destroyTree(root_);
+}
+
+template <typename T>
+void BinaryTree<T>::insert(Node<T>*&node, T value){
+if(node == nullptr){
+    node = new Node<T>(value);
+  }else if( value < node->data){
+    insert(node->left, value);
+  }else{
+    insert(node->right, value);
+  }
+}
+
+template <typename T>
+void BinaryTree<T>::inorder(Node<T>* node) const{
+  if(node != nullptr){
+    inorder(node->left);
+    std::cout<<node->data << " ";
+    inorder(node -> right);
+  }
+}
