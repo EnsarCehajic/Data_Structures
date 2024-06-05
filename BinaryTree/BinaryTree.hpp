@@ -14,5 +14,5 @@ class BinaryTree{
 
 
 private:
-
+size_t size_;
 };
